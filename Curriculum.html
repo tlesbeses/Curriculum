@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - Ulises Josué López Treminio</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+      body {
+        margin: 0;
+        background: #e8ebf2;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .cv {
+        width: 900px;
+        margin: 50px auto;
+        background: white;
+        display: flex;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .triangle-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 160px solid #003b8e;
+        border-right: 160px solid transparent;
+        opacity: 0.9;
+      }
+
+      .triangle-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 230px solid #007bff;
+        border-right: 230px solid transparent;
+        opacity: 0.6;
+      }
+
+      .triangle-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 300px solid #00c4ff;
+        border-right: 300px solid transparent;
+        opacity: 0.4;
+      }
+
+      .left {
+        width: 34%;
+        padding: 40px 30px;
+        background: linear-gradient(180deg, #003b8e, #005fcc, #009dff);
+        color: white;
+        position: relative;
+        z-index: 2;
+      }
+
+      .photo {
+        width: 170px;
+        height: 170px;
+        background: #ffffff40;
+        border-radius: 12px;
+        border: 3px solid #ffffff90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        backdrop-filter: blur(4px);
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        font-weight: 600;
+        border-bottom: 2px solid #ffffff50;
+        padding-bottom: 6px;
+        letter-spacing: 0.5px;
+      }
+
+      .left p,
+      .left li {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .right {
+        width: 66%;
+        padding: 40px 50px;
+        color: #333;
+        z-index: 2;
+        background: white;
+      }
+
+      .right h1 {
+        margin: 0;
+        font-size: 38px;
+        font-weight: 800;
+        color: #003b8e;
+      }
+
+      .section-title {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 14px;
+        padding-left: 12px;
+        border-left: 5px solid #007bff;
+        color: #003b8e;
+        font-weight: 700;
+      }
+
+      .job {
+        margin-bottom: 25px;
+      }
+
+      .job h3 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 600;
+        color: #222;
+      }
+
+      .sub {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .cert-link {
+        display: block;
+        text-decoration: none;
+        border-left: 4px solid transparent;
+        padding-left: 10px;
+        margin-bottom: 12px;
+        transition: all 0.25s ease;
+      }
+
+      .cert-link h3 {
+        color: #003b8e;
+        transition: color 0.25s ease;
+      }
+
+      .cert-link .sub {
+        color: #555;
+      }
+
+      .cert-link:hover {
+        background: #f4f8ff;
+        border-left: 4px solid #007bff;
+        transform: translateX(4px);
+      }
+
+      .cert-link:hover h3 {
+        color: #007bff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv">
+      <div class="triangle-1"></div>
+      <div class="triangle-2"></div>
+      <div class="triangle-3"></div>
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="left">
+        <img src="./img.jpeg" class="photo" alt="" />
+
+        <h2>DATOS PERSONALES</h2>
+
+        <p>
+          <strong>Nombre completo:</strong><br />
+          Kevin Ernesto Cardoza Lopez
+        </p>
+
+        <p>
+          <strong>Cédula:</strong><br />
+          489-300301-1003Y
+        </p>
+
+        <p>
+          <strong>Teléfono:</strong><br />
+          8937-7967
+        </p>
+
+        <p>
+          <strong>Correo electrónico:</strong><br />
+          pevin.kevin@gmail.com
+        </p>
+
+        <p>
+          <strong>Dirección:</strong><br />
+          Del Pali 6 cuadras y media al este.
+        </p>
+
+        <h2>REFERENCIAS PERSONALES</h2>
+        <p><strong>Danny Josue Tercero Tellez</strong><br />Tel: 8518-6671</p>
+        <p>
+          <strong>Norvin Antonio Gutierres Gutierres</strong><br />Tel:
+          5867-8964
+        </p>
+
+        <h2>FORTALEZAS Y CUALIDADES</h2>
+        <ul>
+          <li>Responsabilidad</li>
+          <li>Trabajo en equipo</li>
+          <li>Adaptación rápida</li>
+          <li>Comunicación efectiva</li>
+          <li>Manejo del estrés</li>
+        </ul>
+
+        <h2>DEBILIDADES</h2>
+        <ul>
+          <li>Perfeccionismo (buscando siempre mejorar)</li>
+          <li>Reservado al inicio (se adapta rápido)</li>
+        </ul>
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="right">
+        <h1>Currículum Vitae</h1>
+
+        <p
+          style="
+            margin-top: 10px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+          "
+        >
+          Soy una persona responsable, comprometida y con disposición para
+          aprender. Me caracteriza el buen trato al cliente, la colaboración con
+          mis compañeros y la capacidad para adaptarme a distintos entornos
+          laborales. Busco siempre cumplir mis tareas con respeto, esfuerzo y
+          actitud positiva.
+        </p>
+
+        <!-- FORTALEZAS Y CUALIDADES -->
+        <h2 class="section-title">Perfil Profesional</h2>
+
+        <a
+          href="https://uni.edu.ni/assets/pdf/BrochurIngenieriaSistemas.pdf"
+          class="cert-link"
+        >
+          <div class="job">
+            <h3>Ingeniería en Sistemas de Información</h3>
+            <div class="sub">
+              Información sobre la carrera de Ingeniería en Sistemas de Información en
+              la Universidad Nacional de Ingeniería.
+            </div>
+          </div>
+        </a>
+
+        <!-- Formación -->
+        <h2 class="section-title">Formación Académica</h2>
+        <a href="/UniTitulo.pdf" class="cert-link">
+          <div class="job">
+            <h3>Universidad Nacional De Ingeniería</h3>
+            <div class="sub">
+              Ingeniero En sistemas De información — 2019 a 2024
+            </div>
+          </div>
+        </a>
+        <a href="/SecundariaTitulo_rotated.pdf" class="cert-link">
+          <div class="job">
+            <h3>Emanuel Mongalo y Rubio</h3>
+            <div class="sub">Educación Secundaria — 2013 a 2018</div>
+          </div>
+        </a>
+        <!-- Experiencia -->
+        <h2 class="section-title">Experiencia Laboral</h2>
+
+        <div class="job">
+          <h3>Freelance – Desarrollo Web y Asistencia Académica</h3>
+          <div class="sub">2024 – 2025</div>
+          <ul>
+            <li>Desarrollo de sitios web frontend</li>
+            <li>Apoyo en la elaboración de trabajos monográficos</li>
+            <li>Asistencia y acompañamiento académico</li>
+            <li>Implementación de interfaces web responsivas</li>
+            <li>Asistencia en la instalación, operación y gestión de sistemas de información</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Taller Cardoza</h3>
+          <div class="sub">
+            Asistente de mecánico general<br />
+            febrero 2016 – septiembre 2018
+          </div>
+        </div>
+
+        <h2 class="section-title">Licencias y certificaciones</h2>
+
+        <a
+          href="https://www.coursera.org/account/accomplishments/verify/8FGOCL4AKLVP"
+          class="cert-link"
+        >
+          <div class="job">
+            <h3>Introducción to Front-End Development</h3>
+            <div class="sub">Meta — feb 2026</div>
+          </div>
+        </a>
+        <a
+          href="https://www.coursera.org/account/accomplishments/verify/A42NKNKZIAU9"
+          class="cert-link"
+        >
+          <div class="job">
+            <h3>Perfect Tenses and Modals</h3>
+            <div class="sub">University of California, Irvine — feb 2026</div>
+          </div>
+        </a>
+
+        <h2 class="section-title">Formación Complementaria</h2>
+        <ul>
+            <li>Manejo avanzado del paquete Office (Excel, Word, Project)</li>
+            <li>Dominio de los sistemas operativos Windows, Linux Ubuntu</li>
+            <li>Administración de base de datos, MySQL, PostgreSQL, SQL SERVER</li>
+            <li>Administración de contenido y campañas publicitarias en redes sociales</li>
+            <li>Manejo de software de programación C#, JavaScript, PHP</li>
+          </ul>
+      </div>
+    </div>
+  </body>
+</html>
