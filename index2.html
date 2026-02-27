@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Kevin Ernesto Cardoza Lopez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e40af;       /* Azul más moderno y profesional */
+      --primary-dark: #1e3a8a;
+      --accent: #3b82f6;
+      --text: #1f2937;
+      --text-light: #4b5563;
+      --light: #f3f4f6;
+      --gray: #6b7280;
+      --border: #d1d5db;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f8fafc;
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 1100px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      padding: 50px 35px;
+      border-right: 1px solid var(--border);
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      display: block;
+      margin: 0 auto 30px;
+    }
+
+    .sidebar h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--primary-dark);
+      margin: 35px 0 18px;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .sidebar h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .contact-item {
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .soft-skills {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    .soft-skills li {
+      margin-bottom: 8px;
+    }
+
+    /* Main content */
+    .main {
+      padding: 60px 50px;
+    }
+
+    .header h1 {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .header .title {
+      font-size: 20px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .summary {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 40px;
+      text-align: justify;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin: 45px 0 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .exp-item {
+      margin-bottom: 32px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .exp-position {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .exp-date {
+      font-size: 14px;
+      color: var(--gray);
+      font-weight: 500;
+    }
+
+    .exp-company {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .exp-desc ul {
+      padding-left: 20px;
+      list-style-type: disc;
+      color: var(--text-light);
+    }
+
+    .exp-desc li {
+      margin-bottom: 8px;
+    }
+
+    .cert-item {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 16px;
+      transition: all 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .cert-item:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(59,130,246,0.12);
+    }
+
+    .cert-item h4 {
+      margin: 0 0 6px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+
+    .cert-item .issuer {
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .competencias {
+      font-size: 15px;
+      color: var(--text-light);
+    }
+
+    .competencias strong {
+      color: var(--primary);
+    }
+
+    @media (max-width: 900px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 40px 30px;
+      }
+      .main {
+        padding: 40px 30px;
+      }
+    }
+
+    @media print {
+      body { background: white; }
+      .cv-container {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+      }
+      .sidebar { background: white !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+  <aside class="sidebar">
+    <img src="./imgTitulo.jpeg" alt="Kevin Ernesto Cardoza Lopez" class="profile-img">
+
+    <h2>Contacto</h2>
+    <div class="contact-item">
+      <strong>Teléfono</strong>
+      8937-7967
+    </div>
+    <div class="contact-item">
+      <strong>Email</strong>
+      pevin.kevin@gmail.com
+    </div>
+    <div class="contact-item">
+      <strong>Ubicación</strong>
+      Managua, Nicaragua
+    </div>
+
+    <h2>Tech Stack</h2>
+    <div class="skill-tags">
+      <span class="skill-tag">JavaScript (ES6+)</span>
+      <span class="skill-tag">C#</span>
+      <span class="skill-tag">PHP</span>
+      <span class="skill-tag">HTML5 / CSS3</span>
+      <span class="skill-tag">MySQL</span>
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">SQL Server</span>
+      <span class="skill-tag">Linux / Ubuntu</span>
+      <span class="skill-tag">Git / GitHub</span>
+    </div>
+
+    <h2>Soft Skills</h2>
+    <ul class="soft-skills">
+      <li>• Comunicación Proactiva</li>
+      <li>• Pensamiento Analítico</li>
+      <li>• Trabajo Colaborativo</li>
+      <li>• Gestión de Tiempo</li>
+    </ul>
+
+    <h2>Referencias</h2>
+    <div class="contact-item">
+      <strong>Danny Josué Tercero</strong>
+      8518-6671
+    </div>
+    <div class="contact-item">
+      <strong>Norvin Gutiérrez</strong>
+      5867-8964
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <h1>Kevin Ernesto Cardoza Lopez</h1>
+      <div class="title">Ingeniero en Sistemas de Información | Front-End Developer</div>
+    </header>
+
+    <p class="summary">
+      Ingeniero graduado de la <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida base lógica y capacidad analítica. Especializado en el desarrollo de interfaces de usuario modernas y funcionales. Me caracterizo por un aprendizaje autodidacta constante, habiendo obtenido certificaciones internacionales en desarrollo Frontend y gramática avanzada de inglés. Busco aplicar mi capacidad técnica y responsabilidad en entornos que desafíen mis habilidades de ingeniería.
+    </p>
+
+    <h3 class="section-title">Educación</h3>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-position">Ingeniería en Sistemas de Información</span>
+        <span class="exp-date">2019 — 2024</span>
+      </div>
+      <span class="exp-company">Universidad Nacional de Ingeniería (UNI)</span>
+    </div>
+
+    <h3 class="section-title">Experiencia Laboral</h3>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-position">Desarrollador Freelance & Consultor Académico</span>
+        <span class="exp-date">2024 — Presente</span>
+      </div>
+      <ul class="exp-desc">
+        <li>Desarrollo de interfaces web responsivas utilizando arquitecturas modernas de Frontend.</li>
+        <li>Asesoría técnica en proyectos monográficos, enfocada en la gestión y operación de sistemas de información.</li>
+        <li>Diseño e implementación de bases de datos relacionales para soluciones personalizadas.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-position">Asistente Técnico General</span>
+        <span class="exp-date">2016 — 2018</span>
+      </div>
+      <span class="exp-company">Taller Cardoza</span>
+      <p class="exp-desc" style="margin-top:8px;">Desarrollo de disciplina laboral, resolución de problemas mecánicos bajo presión y atención directa al cliente.</p>
+    </div>
+
+    <h3 class="section-title">Certificaciones Internacionales</h3>
+    <a href="https://www.coursera.org/account/accomplishments/verify/8FGOCL4AKLVP" target="_blank" class="cert-item">
+      <h4>Introduction to Front-End Development</h4>
+      <span class="issuer">Meta Certification</span>
+    </a>
+    <a href="https://www.coursera.org/account/accomplishments/verify/A42NKNKZIAU9" target="_blank" class="cert-item">
+      <h4>Perfect Tenses and Modals (Advanced Grammar)</h4>
+      <span class="issuer">University of California, Irvine</span>
+    </a>
+
+    <h3 class="section-title">Competencias Complementarias</h3>
+    <div class="competencias">
+      • <strong>Herramientas de Oficina:</strong> Manejo avanzado de Excel, Word y Microsoft Project para gestión de planes de trabajo.<br><br>
+      • <strong>Marketing Digital:</strong> Gestión de campañas publicitarias y administración de contenido en redes sociales.<br><br>
+      • <strong>Sistemas:</strong> Administración avanzada de Windows y Linux (Ubuntu Desktop/Server).
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
