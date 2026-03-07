@@ -1,393 +1,280 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <head>
-      <meta
-        property="og:title"
-        content="Kevin Cardoza  | Ingeniero en Sistemas"
-      />
-      <meta property="og:type" content="profile" />
-      <meta
-        property="og:description"
-        content="Experiencia en desarrollo web, integración de tecnologías modernas, diseño de interfaces intuitivas y construcción de soluciones digitales eficientes y escalables."
-      />
-      <meta
-        property="og:url"
-        content="https://tlesbeses.github.io/Curriculum/"
-      />
-      <meta property="og:image" content="https://tlesbeses.github.io/Curriculum/imgTitulo.jpeg" />
-      <meta property="og:locale" content="es_ES" />
-      <meta
-        property="og:site_name"
-        content="Portafolio Profesional Kevin Cardoza"
-      />
-    </head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Cardoza | Ingeniero en Sistemas | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portafolio profesional de Kevin Cardoza, Ingeniero en Sistemas especializado en desarrollo Frontend y soluciones web modernas."
+    />
+    <meta
+      name="keywords"
+      content="Kevin Cardoza, Frontend Developer, Ingeniero en Sistemas, JavaScript, HTML, CSS, Nicaragua"
+    />
+    <meta name="author" content="Kevin Ernesto Cardoza Lopez" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph -->
 
-      body {
-        margin: 0;
-        background: #e8ebf2;
-        font-family: "Poppins", sans-serif;
-      }
+    <meta property="og:title" content="Kevin Cardoza | Ingeniero en Sistemas" />
+    <meta
+      property="og:description"
+      content="Desarrollador Frontend especializado en interfaces modernas y soluciones web eficientes."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://tlesbeses.github.io/Curriculum/" />
+    <meta
+      property="og:image"
+      content="https://tlesbeses.github.io/Curriculum/imgTitulo.jpeg"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta
+      property="og:site_name"
+      content="Portafolio Profesional Kevin Cardoza"
+    />
 
-      .cv {
-        width: 900px;
-        margin: 50px auto;
-        background: white;
-        display: flex;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        position: relative;
-        overflow: hidden;
-      }
+    <!-- Twitter Card -->
 
-      .triangle-1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 160px solid #003b8e;
-        border-right: 160px solid transparent;
-        opacity: 0.9;
-      }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kevin Cardoza | Ingeniero en Sistemas"
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollador Frontend especializado en interfaces modernas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tlesbeses.github.io/Curriculum/imgTitulo.jpeg"
+    />
+    <!-- Fonts Performance -->
 
-      .triangle-2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 230px solid #007bff;
-        border-right: 230px solid transparent;
-        opacity: 0.6;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      .triangle-3 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 300px solid #00c4ff;
-        border-right: 300px solid transparent;
-        opacity: 0.4;
-      }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-      .left {
-        width: 34%;
-        padding: 40px 30px;
-        background: linear-gradient(180deg, #003b8e, #005fcc, #009dff);
-        color: white;
-        position: relative;
-        z-index: 2;
-      }
+    <link rel="stylesheet" href="css/style.css" />
 
-      .photo {
-        width: 170px;
-        height: 170px;
-        background: #ffffff40;
-        border-radius: 12px;
-        border: 3px solid #ffffff90;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 30px;
-        font-size: 15px;
-        font-weight: 600;
-        backdrop-filter: blur(4px);
-      }
+    <!-- Schema Markup SEO -->
 
-      h2 {
-        font-size: 16px;
-        margin-top: 30px;
-        margin-bottom: 12px;
-        font-weight: 600;
-        border-bottom: 2px solid #ffffff50;
-        padding-bottom: 6px;
-        letter-spacing: 0.5px;
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kevin Ernesto Cardoza Lopez",
+        "jobTitle": "Frontend Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Managua",
+          "addressCountry": "Nicaragua"
+        },
+        "url": "https://tlesbeses.github.io/Curriculum/"
       }
+    </script>
 
-      .left p,
-      .left li {
-        font-size: 14px;
-        line-height: 1.6;
-      }
-
-      ul {
-        padding-left: 20px;
-        margin: 0;
-      }
-
-      .right {
-        width: 66%;
-        padding: 40px 50px;
-        color: #333;
-        z-index: 2;
-        background: white;
-      }
-
-      .right h1 {
-        margin: 0;
-        font-size: 38px;
-        font-weight: 800;
-        color: #003b8e;
-      }
-
-      .section-title {
-        font-size: 20px;
-        margin-top: 30px;
-        margin-bottom: 14px;
-        padding-left: 12px;
-        border-left: 5px solid #007bff;
-        color: #003b8e;
-        font-weight: 700;
-      }
-
-      .job {
-        margin-bottom: 25px;
-      }
-
-      .job h3 {
-        margin: 0;
-        font-size: 17px;
-        font-weight: 600;
-        color: #222;
-      }
-
-      .sub {
-        color: #666;
-        font-size: 14px;
-        margin-bottom: 8px;
-      }
-
-      .cert-link {
-        display: block;
-        text-decoration: none;
-        border-left: 4px solid transparent;
-        padding-left: 10px;
-        margin-bottom: 12px;
-        transition: all 0.25s ease;
-      }
-
-      .cert-link h3 {
-        color: #003b8e;
-        transition: color 0.25s ease;
-      }
-
-      .cert-link .sub {
-        color: #555;
-      }
-
-      .cert-link:hover {
-        background: #f4f8ff;
-        border-left: 4px solid #007bff;
-        transform: translateX(4px);
-      }
-
-      .cert-link:hover h3 {
-        color: #007bff;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <div class="cv">
-      <div class="triangle-1"></div>
-      <div class="triangle-2"></div>
-      <div class="triangle-3"></div>
+    <div class="cv-container">
+      <aside class="sidebar">
+        <img
+          src="./imgTitulo.jpeg"
+          alt="Kevin Ernesto Cardoza Lopez"
+          class="profile-img"
+        />
 
-      <!-- COLUMNA IZQUIERDA -->
-      <div class="left">
-        <img src="./imgTitulo.jpeg" class="photo" alt="" />
-
-        <h2>DATOS PERSONALES</h2>
-
-        <p>
-          <strong>Nombre completo:</strong><br />
-          Kevin Ernesto Cardoza Lopez
-        </p>
-
-        <p>
-          <strong>Cédula:</strong><br />
-          489-300301-1003Y
-        </p>
-
-        <p>
-          <strong>Teléfono:</strong><br />
+        <h2>Contacto</h2>
+        <div class="contact-item">
+          <strong>Teléfono</strong>
           8937-7967
-        </p>
-
-        <p>
-          <strong>Correo electrónico:</strong><br />
+        </div>
+        <div class="contact-item">
+          <strong>Email</strong>
           pevin.kevin@gmail.com
-        </p>
+        </div>
+        <div class="contact-item">
+          <strong>Ubicación</strong>
+          Managua, Nicaragua
+        </div>
 
-        <p>
-          <strong>Dirección:</strong><br />
-          Del Pali 6 cuadras y media al este.
-        </p>
+        <h2>Tech Stack</h2>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript (ES6+)</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">HTML5 / CSS3</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">Linux / Ubuntu</span>
+          <span class="skill-tag">Git / GitHub</span>
+        </div>
 
-        <h2>REFERENCIAS PERSONALES</h2>
-        <p><strong>Danny Josue Tercero Tellez</strong><br />Tel: 8518-6671</p>
-        <p>
-          <strong>Norvin Antonio Gutierres Gutierres</strong><br />Tel:
+        <h2>Soft Skills</h2>
+        <ul class="soft-skills">
+          <li>Comunicación Proactiva</li>
+          <li>Pensamiento Analítico</li>
+          <li>Trabajo Colaborativo</li>
+          <li>Gestión de Tiempo</li>
+        </ul>
+
+        <h2>Referencias</h2>
+        <div class="contact-item">
+          <strong>Danny Josué Tercero</strong>
+          8518-6671
+        </div>
+        <div class="contact-item">
+          <strong>Norvin Gutiérrez</strong>
           5867-8964
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <h1>Kevin Ernesto Cardoza Lopez</h1>
+          <div class="title">
+            Ingeniero en Sistemas de Información | Front-End Developer
+          </div>
+        </header>
+
+        <p class="summary">
+          Ingeniero graduado de la
+          <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida
+          base lógica y capacidad analítica. Especializado en el desarrollo de
+          interfaces de usuario modernas y funcionales. Me caracterizo por un
+          aprendizaje autodidacta constante, habiendo obtenido certificaciones
+          internacionales en desarrollo Frontend y gramática avanzada de inglés.
+          Busco aplicar mi capacidad técnica y responsabilidad en entornos que
+          desafíen mis habilidades de ingeniería.
         </p>
 
-        <h2>FORTALEZAS Y CUALIDADES</h2>
-        <ul>
-          <li>Responsabilidad</li>
-          <li>Trabajo en equipo</li>
-          <li>Adaptación rápida</li>
-          <li>Comunicación efectiva</li>
-          <li>Manejo del estrés</li>
-        </ul>
-
-        <h2>DEBILIDADES</h2>
-        <ul>
-          <li>Perfeccionismo (buscando siempre mejorar)</li>
-          <li>Reservado al inicio (se adapta rápido)</li>
-        </ul>
-      </div>
-
-      <!-- COLUMNA DERECHA -->
-      <div class="right">
-        <h1>Currículum Vitae</h1>
-
-        <p
-          style="
-            margin-top: 10px;
-            color: #555;
-            font-size: 15px;
-            line-height: 1.6;
-          "
-        >
-          Soy una persona responsable, comprometida y con disposición para
-          aprender. Me caracteriza el buen trato al cliente, la colaboración con
-          mis compañeros y la capacidad para adaptarme a distintos entornos
-          laborales. Busco siempre cumplir mis tareas con respeto, esfuerzo y
-          actitud positiva.
-        </p>
-
-        <!-- FORTALEZAS Y CUALIDADES -->
-        <h2 class="section-title">Perfil Profesional</h2>
-
-        <a
-          href="https://uni.edu.ni/assets/pdf/BrochurIngenieriaSistemas.pdf"
-          class="cert-link"
-        >
-          <div class="job">
-            <h3>Ingeniería en Sistemas de Información</h3>
-            <div class="sub">
-              Información sobre la carrera de Ingeniería en Sistemas de
-              Información en la Universidad Nacional de Ingeniería.
-            </div>
+        <h3 class="section-title">Educación</h3>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-position"
+              >Ingeniería en Sistemas de Información</span
+            >
+            <span class="exp-date">2019 — 2024</span>
           </div>
-        </a>
-
-        <!-- Formación -->
-        <h2 class="section-title">Formación Académica</h2>
-        <a
-          href="https://drive.google.com/file/d/1MSWmKygDg51X86oSF15JoeBYp3vHJoO1/view?usp=sharing"
-          class="cert-link"
-        >
-          <div class="job">
-            <h3>Universidad Nacional De Ingeniería</h3>
-            <div class="sub">
-              Ingeniero En sistemas De información — 2019 a 2024
-            </div>
+          <div class="exp-footer">
+            <span class="exp-company"
+              >Universidad Nacional de Ingeniería (UNI)</span
+            >
+            <span class="exp-more">Ver más</span>
           </div>
-        </a>
+        </div>
         <a
           href="https://drive.google.com/file/d/1JsbBjaLQjPTydBrBQXWcNDdcxNWJHCje/view"
-          class="cert-link"
+          class="exp-item"
         >
-          <div class="job">
-            <h3>Emanuel Mongalo y Rubio</h3>
-            <div class="sub">Educación Secundaria — 2013 a 2018</div>
+          <div class="exp-header">
+            <span class="exp-position">Bachillerato en Ciencias y Letras</span>
+            <span class="exp-date">2013 — 2018</span>
+          </div>
+
+          <div class="exp-footer">
+            <span class="exp-company">Emanuel Mongalo y Rubio</span>
+            <span class="exp-more">Ver más</span>
           </div>
         </a>
-        <!-- Experiencia -->
-        <h2 class="section-title">Experiencia Laboral</h2>
 
-        <div class="job">
-          <h3>Freelance – Desarrollo Web y Asistencia Académica</h3>
-          <div class="sub">2024 – 2025</div>
-          <ul>
-            <li>Desarrollo de sitios web frontend</li>
-            <li>Apoyo en la elaboración de trabajos monográficos</li>
-            <li>Asistencia y acompañamiento académico</li>
-            <li>Implementación de interfaces web responsivas</li>
+        <h3 class="section-title">Experiencia Laboral</h3>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-position"
+              >Desarrollador Freelance & Consultor Académico</span
+            >
+            <span class="exp-date">2024 — Presente</span>
+          </div>
+          <ul class="exp-desc">
             <li>
-              Asistencia en la instalación, operación y gestión de sistemas de
-              información
+              Desarrollo de interfaces web responsivas utilizando arquitecturas
+              modernas de Frontend.
+            </li>
+            <li>
+              Asesoría técnica en proyectos monográficos, enfocada en la gestión
+              y operación de sistemas de información.
+            </li>
+            <li>
+              Diseño e implementación de bases de datos relacionales para
+              soluciones personalizadas.
             </li>
           </ul>
         </div>
 
-        <div class="job">
-          <h3>Taller Cardoza</h3>
-          <div class="sub">
-            Asistente de mecánico general<br />
-            febrero 2016 – septiembre 2018
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-position">Asistente Técnico General</span>
+            <span class="exp-date">2016 — 2018</span>
           </div>
+          <span class="exp-company">Taller Cardoza</span>
+          <p class="exp-desc" style="margin-top: 8px">
+            Desarrollo de disciplina laboral, resolución de problemas mecánicos
+            bajo presión y atención directa al cliente.
+          </p>
         </div>
 
-        <h2 class="section-title">Licencias y certificaciones</h2>
+        <h3 class="section-title">Certificaciones Internacionales</h3>
         <a
           href="https://coursera.org/share/c8745fb1194f9592632ae222ddd944d6"
-          class="cert-link"
+          target="_blank"
+          class="cert-item"
         >
-          <div class="job">
-            <h3>Version Control</h3>
-            <div class="sub">Meta— 3 mar 2026</div>
+          <h4>Version Control</h4>
+          <div class="exp-footer">
+            <span class="issuer">Meta Certification</span>
+            <span class="exp-more">Ver más</span>
           </div>
         </a>
         <a
           href="https://www.coursera.org/account/accomplishments/verify/JEARDKGGDD46"
-          class="cert-link"
+          target="_blank"
+          class="cert-item"
         >
-          <div class="job">
-            <h3>Programming with JavaScript</h3>
-            <div class="sub">Meta— 27 feb 2026</div>
+          <h4>Programming with JavaScript</h4>
+          <div class="exp-footer">
+            <span class="issuer">Meta Certification</span>
+            <span class="exp-more">Ver más</span>
           </div>
         </a>
         <a
           href="https://www.coursera.org/account/accomplishments/verify/8FGOCL4AKLVP"
-          class="cert-link"
+          target="_blank"
+          class="cert-item"
         >
-          <div class="job">
-            <h3>Introducción to Front-End Development</h3>
-            <div class="sub">Meta — 12 feb 2026</div>
+          <h4>Introduction to Front-End Development</h4>
+          <div class="exp-footer">
+            <span class="issuer">Meta Certification</span>
+            <span class="exp-more">Ver más</span>
           </div>
         </a>
         <a
-          dfsg
           href="https://www.coursera.org/account/accomplishments/verify/A42NKNKZIAU9"
-          class="cert-link"
+          target="_blank"
+          class="cert-item"
         >
-          <div class="job">
-            <h3>Perfect Tenses and Modals</h3>
-            <div class="sub">University of California, Irvine — 9 feb 2026</div>
+          <h4>Perfect Tenses and Modals (Advanced Grammar)</h4>
+          <div class="exp-footer">
+            <span class="issuer">University of California, Irvine</span>
+            <span class="exp-more">Ver más</span>
           </div>
         </a>
 
-        <h2 class="section-title">Formación Complementaria</h2>
-        <ul>
-          <li>Manejo avanzado del paquete Office (Excel, Word, Project)</li>
-          <li>Dominio de los sistemas operativos Windows, Linux Ubuntu</li>
-          <li>
-            Administración de base de datos, MySQL, PostgreSQL, SQL SERVER
-          </li>
-          <li>
-            Administración de contenido y campañas publicitarias en redes
-            sociales
-          </li>
-          <li>Manejo de software de programación C#, JavaScript, PHP</li>
-        </ul>
-      </div>
+        <h3 class="section-title">Competencias Complementarias</h3>
+        <div class="competencias">
+          • <strong>Herramientas de Oficina:</strong> Manejo avanzado de Excel,
+          Word y Microsoft Project para gestión de planes de trabajo.<br /><br />
+          • <strong>Marketing Digital:</strong> Gestión de campañas
+          publicitarias y administración de contenido en redes sociales.<br /><br />
+          • <strong>Sistemas:</strong> Administración avanzada de Windows y
+          Linux (Ubuntu Desktop/Server).
+        </div>
+      </main>
     </div>
   </body>
 </html>
