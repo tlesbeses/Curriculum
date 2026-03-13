@@ -9,6 +9,89 @@
   --border: #d1d5db;
 }
 
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+@media print {
+  body {
+    background: white;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .cv-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    grid-template-columns: 280px 1fr;
+  }
+
+  .sidebar {
+    background: white !important;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+
+  .main {
+    padding: 25px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .section-title {
+    margin-top: 25px;
+  }
+
+  /* Evitar cortes feos entre páginas */
+
+  .exp-item,
+  .cert-item,
+  .section-title,
+  .contact-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Quitar efectos innecesarios */
+
+  .exp-item:hover,
+  .cert-item:hover {
+    transform: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  /* Ocultar elementos interactivos */
+
+  .exp-more {
+    display: none;
+  }
+
+  .section-title{
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.section-title + *{
+  break-before: avoid;
+  page-break-before: avoid;
+}
+}
 * {
   margin: 0;
   padding: 0;
