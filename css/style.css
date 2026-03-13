@@ -85,6 +85,17 @@
   .section-title{
   break-after: avoid;
   page-break-after: avoid;
+  }
+  .contact-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .contact-row .contact-item{
+    margin-bottom: 0;
+  }
 }
 
 .section-title + *{
