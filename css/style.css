@@ -15,6 +15,22 @@
 }
 
 @media print {
+  #print-certificates {
+    width: 100%;
+  }
+
+  .certificate-page {
+    page-break-before: always;
+    width: 210mm;
+    margin: 0 auto;
+  }
+
+  .certificate-page img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   body {
     background: white;
     font-size: 12px;
@@ -82,27 +98,26 @@
     display: none;
   }
 
-  .section-title{
-  break-after: avoid;
-  page-break-after: avoid;
+  .section-title {
+    break-after: avoid;
+    page-break-after: avoid;
   }
-  .contact-row{
+  .contact-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-bottom: 20px;
   }
 
-  .contact-row .contact-item{
+  .contact-row .contact-item {
     margin-bottom: 0;
+  }
+  .cv-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
 
-.section-title + *{
-  break-before: avoid;
-  page-break-before: avoid;
-}
-}
 * {
   margin: 0;
   padding: 0;
