@@ -1,0 +1,9 @@
+# Instaladores y binarios
+*.exe
+*.msi
+
+# Carpetas de páginas guardadas del navegador
+*_files/
+
+# Respaldos locales
+_respaldo-curriculum/

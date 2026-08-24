@@ -6,6 +6,7 @@ const certificates = [
   "img/degres/Coursera 8FGOCL4AKLVP_page-0001.jpg",
   "img/degres/Coursera JEARDKGGDD46_page-0001.jpg",
   "img/degres/Coursera P3V4O98HDHNQ_page-0001.jpg",
+  "img/degres/CERTIFICATE_LANDING_PAGE~1XRV4LAR7NZ9.jpeg",
 ];
 
 function loadCertificates() {
@@ -18,6 +19,7 @@ function loadCertificates() {
 
     const img = document.createElement("img");
     img.src = src;
+    img.decoding = "async";
 
     page.appendChild(img);
     container.appendChild(page);
