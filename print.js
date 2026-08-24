@@ -11,7 +11,7 @@ const certificates = [
 
 function loadCertificates() {
   const container = document.getElementById("print-certificates");
-  container.innerHTML = "";
+  if (!container || container.childElementCount > 0) return;
 
   certificates.forEach((src) => {
     const page = document.createElement("div");
@@ -20,16 +20,13 @@ function loadCertificates() {
     const img = document.createElement("img");
     img.src = src;
     img.decoding = "async";
+    img.alt = "Certificado";
 
     page.appendChild(img);
     container.appendChild(page);
   });
 }
 
-function removeCertificates() {
-  const container = document.getElementById("print-certificates");
-  container.innerHTML = "";
-}
+loadCertificates();
 
 window.addEventListener("beforeprint", loadCertificates);
-window.addEventListener("afterprint", removeCertificates);

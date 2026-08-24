@@ -16,6 +16,7 @@
 
 @media print {
   #print-certificates {
+    display: block;
     width: 100%;
   }
 
@@ -294,25 +295,34 @@ body {
 }
 
 .btn-print {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background: var(--accent);
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
   transition: all 0.2s;
 }
 
 .btn-print:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.4);
+}
+
+#print-certificates {
+  display: none;
 }
 
 .summary {

@@ -169,19 +169,6 @@
           <header class="header">
             <h1>Kevin Ernesto Cardoza Lopez</h1>
             <div class="title">Ingeniero en Sistemas de Información</div>
-            <button
-              type="button"
-              class="btn-print"
-              onclick="window.print()"
-              aria-label="Descargar currículum en PDF"
-            >
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-              Descargar PDF
-            </button>
           </header>
 
           <p class="summary">
@@ -287,7 +274,6 @@
                 </span>
               </button>
               <div class="cert-header-right">
-                <span class="badge-completed">Completada</span>
                 <a
                   href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/Z08IV28LU18T"
                   target="_blank"
@@ -413,7 +399,6 @@
                 </span>
               </button>
               <div class="cert-header-right">
-                <span class="badge-completed">Completada</span>
                 <a
                   href="https://www.coursera.org/account/accomplishments/specialization/certificate/4R606Z1QHJO8"
                   target="_blank"
@@ -550,9 +535,6 @@
                   <span class="cert-group-sub">University of California, Irvine</span>
                 </span>
               </button>
-              <div class="cert-header-right">
-                <span class="badge-progress">En progreso</span>
-              </div>
             </div>
             <div class="cert-group-items" id="cert-en-items" hidden>
 
@@ -595,6 +577,19 @@
         </div>
       </main>
     </div>
+    <button
+      type="button"
+      class="btn-print"
+      onclick="window.print()"
+      aria-label="Descargar currículum en PDF"
+    >
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Descargar PDF
+    </button>
     <div id="print-certificates"></div>
 
     <script>
