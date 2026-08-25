@@ -25,7 +25,7 @@
   }
 
   .btn-print {
-    display: none;
+    display: none !important;
   }
 
   .certificate-page {
@@ -52,13 +52,118 @@
     box-shadow: none;
     border-radius: 0;
     max-width: none;
-    grid-template-columns: 280px 1fr;
+    display: block;
   }
 
   .sidebar {
     background: white !important;
     padding: 20px;
-    border-right: 1px solid #ddd;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  /* Enlaces y Referencias en fila (lado a lado) al imprimir */
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    align-content: start;
+  }
+
+  .sidebar > img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .sidebar > h2:nth-of-type(1) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .sidebar > .contact-row {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .sidebar > h2:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .sidebar > .social-links {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .sidebar > h2:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .sidebar > .referencias {
+    grid-column: 2;
+    grid-row: 5;
+    align-self: start;
+  }
+
+  .sidebar > h2:nth-of-type(3) {
+    grid-column: 1 / -1;
+    grid-row: 6;
+  }
+
+  .sidebar > .skill-tags {
+    grid-column: 1 / -1;
+    grid-row: 7;
+  }
+
+  .sidebar > h2:nth-of-type(4) {
+    grid-column: 1 / -1;
+    grid-row: 8;
+  }
+
+  .sidebar > .soft-skills {
+    grid-column: 1 / -1;
+    grid-row: 9;
+  }
+
+  .referencias .contact-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Sidebar compacto para que Referencias entre en la página 1 */
+  .sidebar .profile-img,
+  .profile-img {
+    width: 110px;
+    height: 110px;
+    border-width: 3px;
+    margin: 0 auto 12px;
+  }
+
+  .sidebar h2 {
+    margin: 14px 0 8px;
+    padding-bottom: 5px;
+  }
+
+  .contact-item {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .social-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .soft-skills li {
+    margin-bottom: 4px;
   }
 
   .main {
