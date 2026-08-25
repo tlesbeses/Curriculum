@@ -54,6 +54,28 @@
       "certs.fe.year": "may. 2026",
       "certs.fs.year": "jul. 2026",
       "certs.view": "Ver certificado ↗",
+      "proj.title": "Proyectos",
+      "proj.demo": "Demo ↗",
+      "proj.code": "Código ↗",
+      "proj.p1.name": "CV Web / Portafolio",
+      "proj.p1.desc":
+        "Portafolio web responsivo con modo oscuro, versión bilingüe y exportación a PDF optimizada.",
+      "proj.p2.name": "Uni Homework Project",
+      "proj.p2.desc":
+        "Plataforma de gestión de tareas universitarias con frontend y backend desarrollados por separado.",
+      "proj.p3.name": "Little Lemon — Frontend",
+      "proj.p3.desc":
+        "Aplicación de reservas para restaurante. Proyecto capstone del certificado Meta Front-End Developer.",
+      "proj.p4.name": "Little Lemon API — Backend",
+      "proj.p4.desc":
+        "API REST de menú y reservas con autenticación por token. Capstone del programa Meta Back-End.",
+      "proj.p5.name": "Derechos",
+      "proj.p5.desc":
+        "Sitio editorial multipágina sobre derechos ciudadanos con diseño responsivo.",
+      "proj.p6.name": "[EDITAR] EVA",
+      "proj.p6.desc": "[EDITAR: descripción breve del proyecto EVA]",
+      "proj.p7.name": "[EDITAR] CMS",
+      "proj.p7.desc": "[EDITAR: descripción breve del CMS]",
       "comp.title": "Competencias Complementarias",
       "comp.item1":
         "<strong>Herramientas de Oficina:</strong> Manejo avanzado de Excel, Word y Microsoft Project para gestión de planes de trabajo.",
@@ -100,6 +122,28 @@
       "certs.fe.year": "May 2026",
       "certs.fs.year": "Jul 2026",
       "certs.view": "View certificate ↗",
+      "proj.title": "Projects",
+      "proj.demo": "Demo ↗",
+      "proj.code": "Code ↗",
+      "proj.p1.name": "Web CV / Portfolio",
+      "proj.p1.desc":
+        "Responsive portfolio website with dark mode, bilingual support and print-optimized PDF export.",
+      "proj.p2.name": "Uni Homework Project",
+      "proj.p2.desc":
+        "University homework management platform with separately developed frontend and backend.",
+      "proj.p3.name": "Little Lemon — Frontend",
+      "proj.p3.desc":
+        "Restaurant reservation app. Capstone project of the Meta Front-End Developer certificate.",
+      "proj.p4.name": "Little Lemon API — Backend",
+      "proj.p4.desc":
+        "REST API for menu and reservations with token authentication. Meta Back-End capstone.",
+      "proj.p5.name": "Derechos",
+      "proj.p5.desc":
+        "Multi-page editorial website about civil rights with responsive design.",
+      "proj.p6.name": "[EDIT] LMS",
+      "proj.p6.desc": "[EDIT: short description of the LMS project]",
+      "proj.p7.name": "[EDIT] CMS",
+      "proj.p7.desc": "[EDIT: short description of the CMS]",
       "comp.title": "Additional Skills",
       "comp.item1":
         "<strong>Office Tools:</strong> Advanced use of Excel, Word and Microsoft Project for work-plan management.",
