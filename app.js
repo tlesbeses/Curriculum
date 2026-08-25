@@ -31,6 +31,11 @@
       "ss.3": "Trabajo Colaborativo",
       "ss.4": "Gestión de Tiempo",
       "refs.title": "Referencias",
+      "langs.title": "Idiomas",
+      "langs.es": "Español",
+      "langs.esLevel": "Nativo",
+      "langs.en": "Inglés",
+      "langs.enLevel": "Intermedio–avanzado · Certificado UC Irvine",
       "hero.title": "Ingeniero en Sistemas de Información",
       "hero.summary":
         'Ingeniero graduado de la <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida base lógica y capacidad analítica. Con experiencia en el desarrollo de interfaces de usuario modernas y funcionales. Me caracterizo por un aprendizaje autodidacta constante, habiendo obtenido certificaciones internacionales en desarrollo y gramática de inglés. Busco aplicar mi capacidad técnica y responsabilidad en entornos que desafíen mis habilidades de ingeniería.',
@@ -99,6 +104,11 @@
       "ss.3": "Collaborative Teamwork",
       "ss.4": "Time Management",
       "refs.title": "References",
+      "langs.title": "Languages",
+      "langs.es": "Spanish",
+      "langs.esLevel": "Native",
+      "langs.en": "English",
+      "langs.enLevel": "Intermediate–Advanced · UC Irvine Certificate",
       "hero.title": "Information Systems Engineer",
       "hero.summary":
         'Systems Engineer graduated from the <strong>National University of Engineering (UNI)</strong>, with a solid logical foundation and analytical mindset. Experienced in developing modern, functional user interfaces. A constant self-learner, having earned international certifications in development and English grammar. Seeking to apply my technical skills and sense of responsibility in environments that challenge my engineering abilities.',
