@@ -23,6 +23,8 @@
       "contact.phone": "Teléfono",
       "contact.email": "Email",
       "contact.location": "Ubicación",
+      "contact.availability": "Disponibilidad",
+      "contact.availabilityValue": "Disponible para trabajo remoto e híbrido",
       "links.title": "Enlaces",
       "ss.1": "Comunicación Proactiva",
       "ss.2": "Pensamiento Analítico",
@@ -49,6 +51,8 @@
       "exp.job2.desc":
         "Desarrollo de disciplina laboral, resolución de problemas mecánicos bajo presión y atención directa al cliente.",
       "certs.title": "Certificaciones Internacionales",
+      "certs.fe.year": "may. 2026",
+      "certs.fs.year": "jul. 2026",
       "certs.view": "Ver certificado ↗",
       "comp.title": "Competencias Complementarias",
       "comp.item1":
@@ -65,6 +69,8 @@
       "contact.phone": "Phone",
       "contact.email": "Email",
       "contact.location": "Location",
+      "contact.availability": "Availability",
+      "contact.availabilityValue": "Available for remote and hybrid work",
       "links.title": "Links",
       "ss.1": "Proactive Communication",
       "ss.2": "Analytical Thinking",
@@ -91,6 +97,8 @@
       "exp.job2.desc":
         "Development of work discipline, solving mechanical problems under pressure, and direct customer service.",
       "certs.title": "International Certifications",
+      "certs.fe.year": "May 2026",
+      "certs.fs.year": "Jul 2026",
       "certs.view": "View certificate ↗",
       "comp.title": "Additional Skills",
       "comp.item1":
