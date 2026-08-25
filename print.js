@@ -27,6 +27,21 @@ function loadCertificates() {
   });
 }
 
-loadCertificates();
+function preloadCertificates() {
+  certificates.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}
+
+const btnPrint = document.querySelector(".btn-print");
+if (btnPrint) {
+  btnPrint.addEventListener("pointerenter", preloadCertificates, {
+    once: true,
+  });
+  btnPrint.addEventListener("touchstart", preloadCertificates, {
+    once: true,
+  });
+}
 
 window.addEventListener("beforeprint", loadCertificates);
