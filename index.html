@@ -63,6 +63,20 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <script>
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (!t)
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+
     <!-- Schema Markup SEO -->
 
     <script type="application/ld+json">
@@ -70,13 +84,35 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Kevin Ernesto Cardoza Lopez",
-        "jobTitle": "Developer",
+        "jobTitle": "Frontend Developer",
+        "email": "mailto:pevin.kevin@gmail.com",
+        "telephone": "+505 8937-7967",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Managua",
+          "addressLocality": "Estelí",
           "addressCountry": "Nicaragua"
         },
-        "url": "https://tlesbeses.github.io/Curriculum/"
+        "url": "https://tlesbeses.github.io/Curriculum/",
+        "sameAs": [
+          "https://github.com/tlesbeses",
+          "https://www.linkedin.com/in/kevin-cardoza-68a036243/"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Nacional de Ingeniería (UNI)"
+        },
+        "knowsAbout": [
+          "JavaScript",
+          "C#",
+          "PHP",
+          "HTML5",
+          "CSS3",
+          "MySQL",
+          "PostgreSQL",
+          "SQL Server",
+          "Linux",
+          "Git"
+        ]
       }
     </script>
   </head>
@@ -91,24 +127,24 @@
           height="486"
         />
 
-        <h2>Contacto</h2>
+        <h2 data-i18n="contact.title">Contacto</h2>
 
         <div class="contact-row">
           <div class="contact-item">
-            <strong>Teléfono</strong>
+            <strong data-i18n="contact.phone">Teléfono</strong>
             <a href="tel:+50589377967">8937-7967</a>
           </div>
           <div class="contact-item">
-            <strong>Email</strong>
+            <strong data-i18n="contact.email">Email</strong>
             <a href="mailto:pevin.kevin@gmail.com">pevin.kevin@gmail.com</a>
           </div>
           <div class="contact-item">
-            <strong>Ubicación</strong>
+            <strong data-i18n="contact.location">Ubicación</strong>
             Esteli, Nicaragua
           </div>
         </div>
 
-        <h2>Enlaces</h2>
+        <h2 data-i18n="links.title">Enlaces</h2>
         <div class="social-links">
           <a
             href="https://github.com/tlesbeses"
@@ -150,13 +186,13 @@
 
         <h2>Soft Skills</h2>
         <ul class="soft-skills">
-          <li>Comunicación Proactiva</li>
-          <li>Pensamiento Analítico</li>
-          <li>Trabajo Colaborativo</li>
-          <li>Gestión de Tiempo</li>
+          <li data-i18n="ss.1">Comunicación Proactiva</li>
+          <li data-i18n="ss.2">Pensamiento Analítico</li>
+          <li data-i18n="ss.3">Trabajo Colaborativo</li>
+          <li data-i18n="ss.4">Gestión de Tiempo</li>
         </ul>
 
-        <h2>Referencias</h2>
+        <h2 data-i18n="refs.title">Referencias</h2>
         <div class="referencias">
           <div class="contact-item">
             <strong>Danny Josué Tercero</strong>
@@ -170,13 +206,13 @@
       </aside>
 
       <main class="main">
-        <div class="cv-section">
+        <div class="cv-section" data-reveal>
           <header class="header">
             <h1>Kevin Ernesto Cardoza Lopez</h1>
-            <div class="title">Ingeniero en Sistemas de Información</div>
+            <div class="title" data-i18n="hero.title">Ingeniero en Sistemas de Información</div>
           </header>
 
-          <p class="summary">
+          <p class="summary" data-i18n="hero.summary">
             Ingeniero graduado de la
             <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida
             base lógica y capacidad analítica. Con experiencia en el desarrollo
@@ -187,13 +223,15 @@
             desafíen mis habilidades de ingeniería.
           </p>
 
-          <h3 class="section-title">Educación</h3>
+          <h3 class="section-title" data-i18n="edu.title">Educación</h3>
           <a
             href="https://drive.google.com/file/d/1MSWmKygDg51X86oSF15JoeBYp3vHJoO1/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
             class="exp-item"
           >
             <div class="exp-header">
-              <span class="exp-position"
+              <span class="exp-position" data-i18n="edu.degree1"
                 >Ingeniería en Sistemas de Información</span
               >
               <span class="exp-date">2019 — 2024</span>
@@ -202,15 +240,17 @@
               <span class="exp-company"
                 >Universidad Nacional de Ingeniería (UNI)</span
               >
-              <span class="exp-more">Ver más</span>
+              <span class="exp-more" data-i18n="common.more">Ver más</span>
             </div>
           </a>
           <a
             href="https://drive.google.com/file/d/1JsbBjaLQjPTydBrBQXWcNDdcxNWJHCje/view"
+            target="_blank"
+            rel="noopener"
             class="exp-item"
           >
             <div class="exp-header">
-              <span class="exp-position"
+              <span class="exp-position" data-i18n="edu.degree2"
                 >Bachillerato en Ciencias y Letras</span
               >
               <span class="exp-date">2013 — 2018</span>
@@ -220,29 +260,29 @@
               <span class="exp-company"
                 >Instituto Nacional De Jalapa (INAJAL)</span
               >
-              <span class="exp-more">Ver más</span>
+              <span class="exp-more" data-i18n="common.more">Ver más</span>
             </div>
           </a>
         </div>
-        <div class="cv-section">
-          <h3 class="section-title">Experiencia Laboral</h3>
+        <div class="cv-section" data-reveal>
+          <h3 class="section-title" data-i18n="exp.title">Experiencia Laboral</h3>
           <div class="exp-item">
             <div class="exp-header">
-              <span class="exp-position"
+              <span class="exp-position" data-i18n="exp.job1.title"
                 >Desarrollador Freelance & Consultor Académico</span
               >
-              <span class="exp-date">2024 — Presente</span>
+              <span class="exp-date" data-i18n="exp.job1.date">2024 — Presente</span>
             </div>
             <ul class="exp-desc">
-              <li>
+              <li data-i18n="exp.job1.b1">
                 Desarrollo de interfaces web responsivas utilizando
                 arquitecturas modernas de Frontend.
               </li>
-              <li>
+              <li data-i18n="exp.job1.b2">
                 Asesoría técnica en proyectos monográficos, enfocada en la
                 gestión y operación de sistemas de información.
               </li>
-              <li>
+              <li data-i18n="exp.job1.b3">
                 Diseño e implementación de bases de datos relacionales para
                 soluciones personalizadas.
               </li>
@@ -251,18 +291,18 @@
 
           <div class="exp-item">
             <div class="exp-header">
-              <span class="exp-position">Asistente Técnico General</span>
+              <span class="exp-position" data-i18n="exp.job2.title">Asistente Técnico General</span>
               <span class="exp-date">2016 — 2018</span>
             </div>
             <span class="exp-company">Taller Cardoza</span>
-            <p class="exp-desc">
+            <p class="exp-desc" data-i18n="exp.job2.desc">
               Desarrollo de disciplina laboral, resolución de problemas
               mecánicos bajo presión y atención directa al cliente.
             </p>
           </div>
         </div>
-        <div class="cv-section">
-          <h3 class="section-title">Certificaciones Internacionales</h3>
+        <div class="cv-section" data-reveal>
+          <h3 class="section-title" data-i18n="certs.title">Certificaciones Internacionales</h3>
 
           <div class="cert-group">
             <div class="cert-group-header">
@@ -283,7 +323,7 @@
                   href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/Z08IV28LU18T"
                   target="_blank"
                   rel="noopener"
-                  class="cert-group-link">Ver certificado ↗</a>
+                  class="cert-group-link" data-i18n="certs.view">Ver certificado ↗</a>
               </div>
             </div>
             <div class="cert-group-items" id="cert-fe-items" hidden>
@@ -295,7 +335,7 @@
               <h4>Introduction to Front-End Development</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -306,7 +346,7 @@
               <h4>Programming with JavaScript</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -317,7 +357,7 @@
               <h4>Version Control</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -328,7 +368,7 @@
               <h4>HTML and CSS in depth</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -339,7 +379,7 @@
               <h4>React Basics</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -350,7 +390,7 @@
               <h4>Advanced React</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -361,7 +401,7 @@
               <h4>Principles of UX/UI Design</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -372,7 +412,7 @@
               <h4>Front-End Developer Capstone</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -383,7 +423,7 @@
               <h4>Coding Interview Preparation</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             </div>
@@ -408,7 +448,7 @@
                   href="https://www.coursera.org/account/accomplishments/specialization/certificate/4R606Z1QHJO8"
                   target="_blank"
                   rel="noopener"
-                  class="cert-group-link">Ver certificado ↗</a>
+                  class="cert-group-link" data-i18n="certs.view">Ver certificado ↗</a>
               </div>
             </div>
             <div class="cert-group-items" id="cert-fs-items" hidden>
@@ -421,7 +461,7 @@
               <h4>Introduction to Front-End Development</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -432,7 +472,7 @@
               <h4>Programming with JavaScript</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -443,7 +483,7 @@
               <h4>Version Control</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -454,7 +494,7 @@
               <h4>HTML and CSS in depth</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -465,7 +505,7 @@
               <h4>React Basics</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -476,7 +516,7 @@
               <h4>Advanced React</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -487,7 +527,7 @@
               <h4>Programming in Python</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -498,7 +538,7 @@
               <h4>Introduction to Databases for Back-End Development</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -509,7 +549,7 @@
               <h4>Django Web Framework</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -520,7 +560,7 @@
               <h4>APIs</h4>
               <div class="exp-footer">
                 <span class="issuer">Meta</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             </div>
@@ -551,7 +591,7 @@
               <h4>Adjectives and Adjective Clauses</h4>
               <div class="exp-footer">
                 <span class="issuer">University of California, Irvine</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             <a
@@ -562,31 +602,52 @@
               <h4>Perfect Tenses and Modals</h4>
               <div class="exp-footer">
                 <span class="issuer">University of California, Irvine</span>
-                <span class="exp-more">Ver más</span>
+                <span class="exp-more" data-i18n="common.more">Ver más</span>
               </div>
             </a>
             </div>
           </div>
         </div>
-        <div class="cv-section">
-          <h3 class="section-title">Competencias Complementarias</h3>
+        <div class="cv-section" data-reveal>
+          <h3 class="section-title" data-i18n="comp.title">Competencias Complementarias</h3>
           <ul class="competencias">
-            <li>
+            <li data-i18n="comp.item1">
               <strong>Herramientas de Oficina:</strong> Manejo avanzado de
               Excel, Word y Microsoft Project para gestión de planes de
               trabajo.
             </li>
-            <li>
+            <li data-i18n="comp.item2">
               <strong>Marketing Digital:</strong> Gestión de campañas
               publicitarias y administración de contenido en redes sociales.
             </li>
-            <li>
+            <li data-i18n="comp.item3">
               <strong>Sistemas:</strong> Administración avanzada de Windows y
               Linux (Ubuntu Desktop/Server).
             </li>
           </ul>
         </div>
       </main>
+    </div>
+    <div class="floating-controls">
+      <button type="button" class="btn-icon" id="btn-lang" aria-label="Cambiar idioma">
+        <span id="lang-label">EN</span>
+      </button>
+      <button type="button" class="btn-icon" id="btn-theme" aria-label="Cambiar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
     </div>
     <button
       type="button"
@@ -599,7 +660,7 @@
         <polyline points="7 10 12 15 17 10"/>
         <line x1="12" y1="15" x2="12" y2="3"/>
       </svg>
-      Descargar PDF
+      <span data-i18n="btn.print">Descargar PDF</span>
     </button>
     <div id="print-certificates"></div>
 
@@ -617,5 +678,6 @@
       });
     </script>
     <script src="print.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
