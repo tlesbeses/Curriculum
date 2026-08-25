@@ -211,6 +211,25 @@
     });
   }
 
+  function applyDevMode(on) {
+    root.setAttribute("data-devmode", on ? "on" : "off");
+    var b = document.getElementById("btn-dev");
+    if (!b) return;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", String(on));
+  }
+
+  applyDevMode(getStored("devmode") === "on");
+
+  var btnDev = document.getElementById("btn-dev");
+  if (btnDev) {
+    btnDev.addEventListener("click", function () {
+      var next = root.getAttribute("data-devmode") !== "on";
+      applyDevMode(next);
+      setStored("devmode", next ? "on" : "off");
+    });
+  }
+
   if (
     "IntersectionObserver" in window &&
     !window.matchMedia("(prefers-reduced-motion: reduce)").matches
