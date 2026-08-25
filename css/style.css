@@ -641,6 +641,33 @@ html[data-devmode="on"] .projects-section {
   display: block;
 }
 
+.dev-intro {
+  display: none;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4ade80;
+  background: #0f172a;
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin: 0 0 20px;
+}
+
+html[data-devmode="on"] .dev-intro {
+  display: block;
+}
+
+.dev-prompt {
+  color: #94a3b8;
+}
+
+@media screen {
+  html[data-devmode="on"] .main > .cv-section:not(.projects-section) {
+    display: none;
+  }
+}
+
 .project-card {
   background: var(--bg-soft);
   border: 1px solid var(--border);
@@ -1089,6 +1116,10 @@ html[data-theme="dark"] .icon-moon {
 
   .projects-section {
     display: block !important;
+  }
+
+  .dev-intro {
+    display: none !important;
   }
 
   .projects-section .project-card {

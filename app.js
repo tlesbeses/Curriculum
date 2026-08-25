@@ -62,6 +62,8 @@
       "proj.title": "Proyectos",
       "proj.demo": "Demo ↗",
       "proj.code": "Código ↗",
+      "proj.intro":
+        '<span class="dev-prompt">kevin@dev:~$</span> Desarrollador Full-Stack apasionado por el código limpio: JavaScript, React, Node.js y Python. Estos son los proyectos que he construido.',
       "proj.p1.name": "CV Web / Portafolio",
       "proj.p1.desc":
         "Portafolio web responsivo con modo oscuro, versión bilingüe y exportación a PDF optimizada.",
@@ -135,6 +137,8 @@
       "proj.title": "Projects",
       "proj.demo": "Demo ↗",
       "proj.code": "Code ↗",
+      "proj.intro":
+        '<span class="dev-prompt">kevin@dev:~$</span> Full-Stack developer passionate about clean code: JavaScript, React, Node.js and Python. These are the projects I have built.',
       "proj.p1.name": "Web CV / Portfolio",
       "proj.p1.desc":
         "Responsive portfolio website with dark mode, bilingual support and print-optimized PDF export.",
