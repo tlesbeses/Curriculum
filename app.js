@@ -63,7 +63,7 @@
       "proj.demo": "Demo ↗",
       "proj.code": "Código ↗",
       "proj.intro":
-        '<span class="dev-prompt">kevin@dev:~$</span> Desarrollador Full-Stack apasionado por el código limpio.<br><strong>Lenguajes:</strong> JavaScript · Python · C#<br><strong>Frontend:</strong> React · <strong>Backend:</strong> Node.js<br><strong>Bases de datos:</strong> MySQL · PostgreSQL · SQLite<br><br>Estos son los proyectos que he construido.',
+        '<span class="dev-prompt">kevin@dev:~$</span> Desarrollador Full-Stack apasionado por el código limpio.<br><strong>Frontend:</strong> React · JavaScript · HTML5 · CSS3<br><strong>Backend:</strong> Django (Python) · Node.js · C#<br><strong>Bases de datos:</strong> MySQL · PostgreSQL · SQLite<br><br>Estos son los proyectos que he construido.',
       "proj.p1.name": "CV Web / Portafolio",
       "proj.p1.desc":
         "Portafolio web responsivo con modo oscuro, versión bilingüe y exportación a PDF optimizada.",
@@ -138,7 +138,7 @@
       "proj.demo": "Demo ↗",
       "proj.code": "Code ↗",
       "proj.intro":
-        '<span class="dev-prompt">kevin@dev:~$</span> Full-Stack developer passionate about clean code.<br><strong>Languages:</strong> JavaScript · Python · C#<br><strong>Frontend:</strong> React · <strong>Backend:</strong> Node.js<br><strong>Databases:</strong> MySQL · PostgreSQL · SQLite<br><br>These are the projects I have built.',
+        '<span class="dev-prompt">kevin@dev:~$</span> Full-Stack developer passionate about clean code.<br><strong>Frontend:</strong> React · JavaScript · HTML5 · CSS3<br><strong>Backend:</strong> Django (Python) · Node.js · C#<br><strong>Databases:</strong> MySQL · PostgreSQL · SQLite<br><br>These are the projects I have built.',
       "proj.p1.name": "Web CV / Portfolio",
       "proj.p1.desc":
         "Responsive portfolio website with dark mode, bilingual support and print-optimized PDF export.",
