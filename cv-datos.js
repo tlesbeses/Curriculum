@@ -51,7 +51,7 @@
       "langs.enLevel": "Intermedio–avanzado · Certificado UC Irvine",
       "hero.title": "Ingeniero en Sistemas · Analista de Datos (en formación)",
       "hero.summary":
-        'Ingeniero en Sistemas de Información graduado de la <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida base lógica, estadística y analítica. Manejo avanzado de Excel y SQL (MySQL, PostgreSQL, SQL Server), conocimientos financieros básicos de contabilidad y costos, y experiencia en el diseño y modelado de bases de datos relacionales. Me encuentro en formación activa en herramientas de inteligencia de negocio (Power BI, Tableau) y metodologías de mejora continua (Lean Six Sigma). Busco iniciar mi carrera como Analista de Datos, aportando excelencia operativa, orientación al cliente y rigor en el orden y la calidad de la información para el análisis de ventas y KPIs comerciales.',
+        'Ingeniero en Sistemas de Información graduado de la <strong>Universidad Nacional de Ingeniería (UNI)</strong> con sólida base lógica, estadística y analítica. Manejo avanzado de Excel y SQL (MySQL, PostgreSQL, SQL Server), conocimientos financieros básicos de contabilidad y costos, y experiencia en el diseño y modelado de bases de datos relacionales. Me encuentro en formación activa en Power BI, herramienta de inteligencia de negocio. Busco iniciar mi carrera como Analista de Datos, aportando excelencia operativa, orientación al cliente y rigor en el orden y la calidad de la información para el análisis de ventas y KPIs comerciales.',
       "edu.title": "Educación",
       "edu.degree1": "Ingeniería en Sistemas de Información",
       "edu.degree2": "Bachillerato en Ciencias y Letras",
@@ -95,14 +95,6 @@
       "train.title": "Formación en Curso",
       "train.i1":
         "<strong>Power BI:</strong> conocimiento conceptual del flujo de datos (conectar fuentes Excel/BD, limpiar, modelar y publicar reportes); formación práctica en curso.",
-      "train.i2":
-        "<strong>Tableau:</strong> en formación (visualización y análisis exploratorio de datos).",
-      "train.i3":
-        "<strong>SAP y Truck:</strong> en formación (entornos comerciales empresariales).",
-      "train.i4":
-        "<strong>Lean Six Sigma / Mejora Continua:</strong> en formación.",
-      "train.i5":
-        "<strong>KPIs comerciales y pronóstico de ventas (forecast):</strong> en formación.",
       "certs.title": "Certificaciones Internacionales",
       "certs.fe.year": "may. 2026",
       "certs.fs.year": "jul. 2026",
@@ -153,7 +145,7 @@
       "langs.enLevel": "Intermediate–Advanced · UC Irvine Certificate",
       "hero.title": "Systems Engineer · Data Analyst (in training)",
       "hero.summary":
-        'Systems Engineer graduated from the <strong>National University of Engineering (UNI)</strong>, with a solid logical, statistical and analytical foundation. Advanced Excel and SQL skills (MySQL, PostgreSQL, SQL Server), basic financial knowledge in accounting and costs, and experience designing and modelling relational databases. Actively training in business intelligence tools (Power BI, Tableau) and continuous improvement methodologies (Lean Six Sigma). Seeking to start a career as a Data Analyst, bringing operational excellence, customer focus and rigor in the order and quality of information for sales analysis and commercial KPIs.',
+        'Systems Engineer graduated from the <strong>National University of Engineering (UNI)</strong>, with a solid logical, statistical and analytical foundation. Advanced Excel and SQL skills (MySQL, PostgreSQL, SQL Server), basic financial knowledge in accounting and costs, and experience designing and modelling relational databases. Actively training in Power BI, a business intelligence tool. Seeking to start a career as a Data Analyst, bringing operational excellence, customer focus and rigor in the order and quality of information for sales analysis and commercial KPIs.',
       "edu.title": "Education",
       "edu.degree1": "Information Systems Engineering",
       "edu.degree2": "High School Diploma in Sciences and Letters",
@@ -197,14 +189,6 @@
       "train.title": "Current Training",
       "train.i1":
         "<strong>Power BI:</strong> conceptual knowledge of the data flow (connect Excel/database sources, clean, model and publish reports); practical training in progress.",
-      "train.i2":
-        "<strong>Tableau:</strong> in training (data visualization and exploratory analysis).",
-      "train.i3":
-        "<strong>SAP and Truck:</strong> in training (business enterprise environments).",
-      "train.i4":
-        "<strong>Lean Six Sigma / Continuous Improvement:</strong> in training.",
-      "train.i5":
-        "<strong>Commercial KPIs and sales forecasting:</strong> in training.",
       "certs.title": "International Certifications",
       "certs.fe.year": "May 2026",
       "certs.fs.year": "Jul 2026",
