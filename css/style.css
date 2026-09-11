@@ -662,6 +662,11 @@ html[data-devmode="on"] .dev-intro {
   color: #94a3b8;
 }
 
+.dev-intro strong {
+  color: #86efac;
+  font-weight: 600;
+}
+
 @media screen {
   html[data-devmode="on"] .main > .cv-section:not(.projects-section) {
     display: none;
